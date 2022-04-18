@@ -7,8 +7,9 @@ app.use(cors());
 
 
 const productController = require('./controllers/product.controller');
+const otpController = require('./controllers/otp.controller')
 
 app.use('/product', productController)
-
+app.use('/otp', otpController)
 
 module.exports = app;
