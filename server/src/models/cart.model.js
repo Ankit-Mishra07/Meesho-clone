@@ -14,7 +14,8 @@ const productSchema = new Schema({
     category : {type : String, required : true},
     subcategory : {type : String, required : true},
     gender : {type : String, required : true},
-    userid : {type : String, required : true}
+    userid : {type : String, required : true},
+    count : {type : Number, required : false, default : 0}
 
 }, {
     timestamps : true,

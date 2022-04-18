@@ -13,5 +13,7 @@ const signupController = require('./controllers/signup.controller')
 app.use('/product', productController)
 app.use('/otp', otpController)
 app.use('/signup', signupController)
+app.use('/cart', require('./controllers/cart.controller'))
+
 
 module.exports = app;
