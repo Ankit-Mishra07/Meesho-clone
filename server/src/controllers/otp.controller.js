@@ -21,7 +21,7 @@ router.get('/:number', async(req, res) => {
 
         let otp = generateRandomNumber()
         const options = {
-            authorization : '2boh8PjYiZASHKR4s9FVDrkGu3M6Npw0BCmztc5WlvQ1EaUIqgV3u9Hr5WeAxQcTymFGqszENdCBLklj',
+            authorization : process.env.KEY,
             message : `Your OTP for Meesho Clone login is ${otp}. Please do not share this OTP with anyone to keep your account safe.`,
             numbers : [`${num}`]
         }
